@@ -36,4 +36,101 @@
       }
     }
   }
+    .form_contact {
+    width: 600px;
+    text-align: center;
+  }
+  
+  form .input-box{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-box .input-field{
+    width: 48.5%;
+  }
+
+  .field .item{
+    width: 100%;
+    padding: 18px;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 12px 0;
+  }
+
+  .field .error-txt{
+    font-size: 14px;
+    text-align: left;
+    color: yellow;
+    margin: -5px 0 10px;
+    display: none;
+  }
+
+
+  .field.error .item {
+    border-color: yellow;
+  }
+
+  .field.error .error-txt {
+    display: block;
+  }
+
+  form textarea{
+    resize: none;
+  }
+
+  // form button{
+  //   padding: 12px 32px;
+  //   border: none;
+  //   outline: none;
+  //   border-radius: 6px;
+  //   box-shadow: 0 0 10px;
+  //   font-size: 16px;
+  //   cursor: pointer;
+  //   margin-top: 20px;
+  // }
+
+  // form button:hover{
+  //   box-shadow: none;
+  // }
+
+  form button {
+    padding: 12px 32px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  
+    &::after {
+      content: "";
+      background: $primary-color;
+      width: 0px;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    }
+  
+    &:hover {
+      color:  $primary-color;
+      background: $secondary-color;
+      text-decoration: none;
+  
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  
 }
+
+

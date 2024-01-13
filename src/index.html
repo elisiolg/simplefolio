@@ -33,7 +33,8 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
@@ -115,11 +116,10 @@
                 <h3 class="project-wrapper__text-title">Smartbrain</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    The Smartbrain project combines a real life machine learning face detection app with 
+                    React, NodeJS, ExpressJS, PostgreSQL.<br /><br />
+                    <b>Email:</b> demo@gmail.com<br />
+                    <b>Password:</b> demo123
                   </p>
                 </div>
                 <a
@@ -142,7 +142,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://smartbrain-2b5z.onrender.com" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -166,21 +166,19 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Fitness Application</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    The Fitness App project is an application created with React. 
+                    You can explore exercises using keywords or muscle types. 
+                    On the exercise page, you can find YouTube videos to guide you and discover similar exercises targeting the same muscles or using similar equipment.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://fitness-app-yt24.onrender.com/"
                 >
                   See Live
                 </a>
@@ -188,7 +186,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/elisiolg/fitness-app?tab=readme-ov-file"
                 >
                   Source Code
                 </a>
@@ -196,7 +194,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://fitness-app-yt24.onrender.com/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -207,7 +205,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/asteroids.jpg"
+                      src="assets/fitness-app.png"
                     />
                   </div>
                 </a>
@@ -246,7 +244,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://asteroids-eekb.onrender.com" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -275,14 +273,35 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+          <form action="#" id="form_contact">
+            <div class="input-box">
+              <div class="input-field field">
+                <input type="text" class="item" placeholder="Full Name" autocomplete="off" id="name">
+                <div class="error-txt">Full Name can't be blank</div>
+              </div>
+              <div class="input-field field">
+                <input type="text" class="item" placeholder="Email Address" autocomplete="off" id="email">
+                <div class="error-txt email">Email Adress can't be blank</div>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <div class="input-field field">
+                <input type="text" class="item" placeholder="Phone Number" autocomplete="off" id="phone">
+                <div class="error-txt">Phone Number can't be blank</div>
+              </div>
+              <div class="input-field field">
+                <input type="text" class="item" placeholder="Subject" autocomplete="off" id="subject">
+                <div class="error-txt">Subject can't be blank</div>
+              </div>
+            </div>
+
+            <div class="textarea-field field">
+              <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+              <div class="error-txt">Message can't be blank</div>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
@@ -318,5 +337,7 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
